@@ -87,7 +87,7 @@ class Comment(db.Model):
     comment_author = relationship("User", back_populates="comments")
     text = db.Column(db.Text, nullable=False)
 
-# db.create_all()
+db.create_all()
 
 
 
